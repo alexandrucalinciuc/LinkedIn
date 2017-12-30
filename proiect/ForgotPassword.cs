@@ -16,6 +16,7 @@ namespace proiect
         string phoneForgot;
         string newPass;
         string checkPass;
+<<<<<<< HEAD
         static string client_companie;
 
         public static bool IfExists(string mail, string phone)
@@ -59,6 +60,8 @@ namespace proiect
             return false;
 
         }
+=======
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
 
 
         public ForgotPassword()
@@ -74,29 +77,52 @@ namespace proiect
         //txtEmailForgot
         private void txtFirstName_TextChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             emailForgot = txtEmailForgot.Text.ToString();
+=======
+            emailForgot = txtEmailForgot.ToString();
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
         }
 
         //txtPhoneForgot
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             phoneForgot = txtPhoneForgot.Text.ToString();
+=======
+            phoneForgot = txtPhoneForgot.ToString();
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
         }
 
         private void txtNewForgotPass_TextChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             newPass = txtNewForgotPass.Text.ToString();
+=======
+            newPass = txtNewForgotPass.ToString();
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
         }
 
         private void txtConfirmForgotPass_TextChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             checkPass = txtConfirmForgotPass.Text.ToString();
+=======
+            checkPass = txtConfirmForgotPass.ToString();
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
         }
 
         private void btOk_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if(IfExists(emailForgot, phoneForgot) == true)
             {
+=======
+            //aici verificati daca mailul si telefonul corespund, daca da intra in if
+            if (emailForgot.Equals(phoneForgot)){
+
+                //astea de jos sunt doar design
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 panelForgot.Visible = false;
                 panelPassword.Visible = true;
                 btOk1.Visible = false;
@@ -116,6 +142,7 @@ namespace proiect
         {
             if (newPass.Equals(checkPass))
             {
+<<<<<<< HEAD
                 string hash = CClient.SecurePasswordHasher.Hash(newPass);
                 if (client_companie == "client")
                 {
@@ -140,6 +167,9 @@ namespace proiect
                     }
                 }
 
+=======
+                //aici modificati voi in baza de date;
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 MessageBox.Show("New password was set",
                     "Information",
                     MessageBoxButtons.OK,

@@ -14,6 +14,7 @@ namespace proiect
     {
         string username;
         string password;
+<<<<<<< HEAD
         static string skill;
         static string skillC;
 
@@ -99,6 +100,8 @@ namespace proiect
             return false;
 
         }
+=======
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
 
         public Log_page()
         {
@@ -121,19 +124,35 @@ namespace proiect
             //verificari de user si pass
             if (password == null || username == null)
             {
+<<<<<<< HEAD
                 if (password == null && username != null)
+=======
+                if (password == null && username!=null)
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 {
                     MessageBox.Show("Please write the password",
                         "WARNING",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
+<<<<<<< HEAD
                 }
                 else if (username == null && password != null)
+=======
+                    username = null;
+                    password = null;
+                }
+                else if(username == null && password!=null)
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 {
                     MessageBox.Show("Please write the username",
                         "WARNING",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
+<<<<<<< HEAD
+=======
+                    username = null;
+                    password = null;
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 }
                 else
                 {
@@ -141,6 +160,7 @@ namespace proiect
                         "WARNING",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
+<<<<<<< HEAD
                 }
             }
             else if (username != null && password != null)
@@ -241,6 +261,38 @@ namespace proiect
                         "ERROR",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
+=======
+                    username = null;
+                    password = null;
+                }
+            }
+            else if(username !=null && password !=null)
+            {
+                //aici verificati daca parola corespunde userului
+                //conditia mea e doar de test
+                if (username.Equals(password) == false)
+                {
+                    MessageBox.Show("Username or password incorect",
+                        "ERROR",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    username = null;
+                    password = null;
+                }
+                else
+                {
+                    //aici porneste pagina principala daca a trecut de log in si e client
+                    
+                        Form form1 = new Client();
+                        form1.Show();
+                        this.Hide();
+                    
+                    //aici daca e companie
+                        /*Form form= new Companie();
+                        form.Show();
+                        this.Hide();*/
+                    
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
                 }
             }
 
@@ -258,7 +310,11 @@ namespace proiect
             //sign in client
             Form form3 = new SignIn();
             form3.ShowDialog();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
         }
 
 
@@ -267,7 +323,11 @@ namespace proiect
             //sign in companie
             Form form4 = new SignInCompany();
             form4.ShowDialog();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
 
         }
 
@@ -285,4 +345,7 @@ namespace proiect
 
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d58e1b2406af03e621f5e893ebafa7d330a9bc2b
